@@ -238,7 +238,7 @@ main {
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin: 100px 10px 0 90px;
+  margin: 40px 10px 0 90px;
   background-color: var(--bg-primary);
   transition: background-color 600ms ease;
 }
