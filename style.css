@@ -243,6 +243,15 @@ main {
   transition: background-color 600ms ease;
 }
 
+.container .content{
+  margin: 0px 50px 0 50px;
+  width: 50%;
+  padding-bottom: 50px;
+}
+.container .content p{
+  color: var(--text-primary);
+}
+
 .container .heading{
   width: 50%;
   padding-bottom: 50px;
