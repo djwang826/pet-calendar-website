@@ -129,57 +129,7 @@ main {
   transform: rotate(-180deg);
 }
 
-/* Small screens */
-@media only screen and (max-width: 600px) {
-  .navbar {
-    bottom: 0;
-    width: 100vw;
-    height: 5rem;
-  }
 
-  .logo {
-    display: none;
-  }
-
-  .navbar-nav {
-    flex-direction: row;
-  }
-
-  .nav-link {
-    justify-content: center;
-  }
-
-  main {
-    margin: 0;
-  }
-}
-
-/* Large screens */
-@media only screen and (min-width: 600px) {
-  .navbar {
-    top: 0;
-    width: 5rem;
-    height: 100vh;
-  }
-
-  .navbar:hover {
-    width: 16rem;
-  }
-
-  .navbar:hover .link-text {
-    display: inline;
-  }
-
-  .navbar:hover .logo svg
-  {
-    margin-left: 11rem;
-  }
-
-  .navbar:hover .logo-text
-  {
-    left: 0px;
-  }
-}
 
 .dark {
   --text-primary: #b6b6b6;
@@ -301,34 +251,77 @@ main {
  letter-spacing: 3px;
 }
 
-@media only screen and (max-width: 769px){
-    .container .box{
-   flex-direction: column;
+/* Small screens */
+@media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
   }
 
-.container .box .dream{
-  width: 100%;
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  .container{
+    margin: 40px 20px 0 20px;
+  }    
+  .container .box{
+    flex-direction: column;
+  }
+  .container .box .dream{
+    width: 100%;
+  }
+
+  .container .heading{
+    width: 100%;
+  }
+  .container .heading h3{
+    font-size: 2em;
+  }
+
+  .calendar{
+    margin: 40px 20px 0 20px;
+  }
+
+  main {
+    margin: 0;
+  }
+
+
 }
 
+/* Large screens */
+@media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
 
+  .navbar:hover {
+    width: 16rem;
+  }
 
+  .navbar:hover .link-text {
+    display: inline;
+  }
 
+  .navbar:hover .logo svg
+  {
+    margin-left: 11rem;
+  }
 
-}
-
-@media only screen and (max-width: 643px){
-.container .heading{
-  width: 100%;
-}
-.container .heading h3{
-  font-size: 1em;
-
-}
-
-
-
-
-
-
-
+  .navbar:hover .logo-text
+  {
+    left: 0px;
+  }
 }
